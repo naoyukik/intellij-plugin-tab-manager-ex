@@ -1,7 +1,7 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <id>com.github.naoyukik.intellijplugintabmanagerbygit</id>
-    <name>intellij-plugin-tab-manager-by-git</name>
+    <id>com.github.naoyukik.ijtabmanagerex</id>
+   <name>Tab Manager Ex</name>
     <vendor>naoyukik</vendor>
 
     <depends>com.intellij.modules.platform</depends>
