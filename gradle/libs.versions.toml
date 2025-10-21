@@ -7,7 +7,7 @@ changelog = "2.4.0"
 kotlin = "2.2.20"
 intelliJPlatform = "2.10.1"
 kover = "0.9.3"
-qodana = "2024.3.4"
+qodana = "2025.2.1"
 detekt = "1.23.8"
 
 [libraries]
