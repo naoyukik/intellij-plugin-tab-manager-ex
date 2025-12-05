@@ -25,10 +25,10 @@ class OpenFilesFromSelectedCommitsAction : AnAction() {
             return
         }
 
-        // Specify the file path you want to open.
+        // Collect all changed file paths from the selected commits.
         val filePaths = getChangedFilePathsFromCommits(selectedDetails)
 
-        // Function to open the specified file
+        // Open each file in the editor
         filePaths.forEach { filePath ->
             openFile(filePath, project)
         }
