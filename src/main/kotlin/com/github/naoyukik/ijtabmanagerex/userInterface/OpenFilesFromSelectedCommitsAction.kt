@@ -44,9 +44,9 @@ class OpenFilesFromSelectedCommitsAction : AnAction() {
         }.toSet()
     }
 
-    private fun openFile(filepath: String, project: Project) {
-        val virtualFile = LocalFileSystem.getInstance().findFileByPath(filepath) ?: run {
-            LOG.info("File not found: $filepath")
+    private fun openFile(filePath: String, project: Project) {
+        val virtualFile = LocalFileSystem.getInstance().findFileByPath(filePath) ?: run {
+            LOG.info("File not found: $filePath")
             return
         }
 
