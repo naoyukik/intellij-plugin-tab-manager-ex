@@ -1,5 +1,6 @@
 package com.github.naoyukik.ijtabmanagerex.userInterface
 
+import com.intellij.openapi.actionSystem.ActionUpdateThread
 import com.intellij.openapi.actionSystem.AnAction
 import com.intellij.openapi.actionSystem.AnActionEvent
 import com.intellij.openapi.diagnostic.Logger
@@ -26,11 +27,12 @@ class OpenFilesFromSelectedCommitsAction : AnAction() {
         }
 
         // Collect all changed file paths from the selected commits.
-        val filePaths = getChangedFilePathsFromCommits(selectedDetails)
+        val filePaths = getChangedFilePathsFromCommits(selectedDetails).toList()
 
         // Open each file in the editor
-        filePaths.forEach { filePath ->
-            openFile(filePath, project)
+        val lastIndex = filePaths.lastIndex
+        filePaths.forEachIndexed { index, filePath ->
+            openFile(filePath, project, index == lastIndex)
         }
     }
 
@@ -44,12 +46,12 @@ class OpenFilesFromSelectedCommitsAction : AnAction() {
         }.toSet()
     }
 
-    private fun openFile(filePath: String, project: Project) {
+    private fun openFile(filePath: String, project: Project, focus: Boolean = false) {
         val virtualFile = LocalFileSystem.getInstance().findFileByPath(filePath) ?: run {
             LOG.info("File not found: $filePath")
             return
         }
 
-        FileEditorManager.getInstance(project).openFile(virtualFile, true)
+        FileEditorManager.getInstance(project).openFile(virtualFile, focus)
     }
 }
