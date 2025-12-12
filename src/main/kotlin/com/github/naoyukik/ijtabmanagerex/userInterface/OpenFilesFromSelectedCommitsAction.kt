@@ -13,6 +13,15 @@ import com.intellij.vcs.log.VcsLogDataKeys
 private val LOG = Logger.getInstance(OpenFilesFromSelectedCommitsAction::class.java)
 
 class OpenFilesFromSelectedCommitsAction : AnAction() {
+    override fun getActionUpdateThread(): ActionUpdateThread {
+        return ActionUpdateThread.BGT
+    }
+
+    override fun update(e: AnActionEvent) {
+        val selectedDetails = e.getData(VcsLogDataKeys.VCS_LOG_COMMIT_SELECTION)?.cachedFullDetails
+        e.presentation.isEnabled = e.project != null && !selectedDetails.isNullOrEmpty()
+    }
+
     override fun actionPerformed(e: AnActionEvent) {
         val project = e.project ?: run {
             LOG.error("Project is null, cannot perform action.")
