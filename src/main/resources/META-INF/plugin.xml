@@ -15,5 +15,12 @@
                 description="Open all modified files from selected commits.">
             <add-to-group group-id="Git.Log.ContextMenu" anchor="last" />
         </action>
+        <action id="PinCurrentFilesAction"
+                class="com.github.naoyukik.ijtabmanagerex.userInterface.PinCurrentFilesAction"
+                text="Pin Current Files"
+                description="Pin current files to the tab manager.">
+            <add-to-group group-id="EditorTabPopupMenu" anchor="last" />
+            <add-to-group group-id="EditorPopupMenu" anchor="last" />
+        </action>
     </actions>
 </idea-plugin>
