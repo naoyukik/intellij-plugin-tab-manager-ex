@@ -20,10 +20,16 @@
 This plugin adds an action to open all modified files from selected commits in the Git log.
 
 ### Features
+**Open Changed Files from Git Log**
 - Right-click on one or more commits in the Git log view.
 - Select "Open Changed Files" from the context menu.
 - All files that were created, modified, or moved in the selected commits will be opened in the editor.
 - Deleted files are ignored.
+
+**Pin All Open Files**
+- Right-click on an editor tab or within the editor.
+- Select "Pin Current Files".
+- All currently open files will be pinned.
 
 This is useful when you want to review the changes in a set of commits, or quickly open all relevant files for a feature or bug fix.
 <!-- Plugin description end -->
