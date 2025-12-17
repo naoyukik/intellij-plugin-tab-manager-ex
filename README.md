@@ -28,8 +28,13 @@ This plugin adds an action to open all modified files from selected commits in t
 
 **Pin All Open Files**
 - Right-click on an editor tab or within the editor.
-- Select "Pin Current Files".
+- Select "Pin All Open Files".
 - All currently open files will be pinned.
+
+**Remove All Pins**
+- Right-click on an editor tab or within the editor.
+- Select "Remove All Pins".
+- All currently open files will be unpinned.
 
 This is useful when you want to review the changes in a set of commits, or quickly open all relevant files for a feature or bug fix.
 <!-- Plugin description end -->
