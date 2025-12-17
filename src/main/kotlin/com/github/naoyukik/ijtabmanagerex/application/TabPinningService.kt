@@ -16,4 +16,14 @@ class TabPinningService(val project: Project) {
             }
         }
     }
+
+    @RequiresEdt
+    fun unpinAll() {
+        val editorManager = FileEditorManagerEx.getInstanceEx(project)
+        editorManager.windows.forEach { window ->
+            window.fileList.forEach { file ->
+                window.setFilePinned(file, false)
+            }
+        }
+    }
 }
