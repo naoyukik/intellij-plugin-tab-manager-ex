@@ -3,3 +3,10 @@
 .intellijPlatform
 .qodana
 build
+/.claude/
+/.gemini/
+/.aiassistant/
+/.junie/
+/CLAUDE.md
+/GEMINI.md
+/AGENTS.md
