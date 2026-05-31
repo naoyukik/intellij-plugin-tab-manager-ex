@@ -4,6 +4,12 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Support for IntelliJ versions 2026.2
+
+## [0.2.1] - 2026-03-25
+
 ### Added
 
 - Support for IntelliJ versions 2026.1
