@@ -4,6 +4,13 @@
 
 ## [Unreleased]
 
+### Removed
+
+- Remove the obsolete `pluginUntilBuild` property. The upper bound is now managed by the JetBrains Marketplace versions
+  control.
+
+## [0.2.2] - 2026-06-01
+
 ### Changed
 
 - Support for IntelliJ versions 2026.2
