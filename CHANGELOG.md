@@ -4,10 +4,9 @@
 
 ## [Unreleased]
 
-### Removed
+### Changed
 
-- Remove the obsolete `pluginUntilBuild` property. The upper bound is now managed by the JetBrains Marketplace versions
-  control.
+- Remove the upper limit on supported versions
 
 ## [0.2.2] - 2026-06-01
 
