@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [0.2.3] - 2026-10-02
+
 ### Changed
 
 - Remove the upper limit on supported versions
@@ -30,4 +32,12 @@
 ## [0.1.0] - 2025-12-13
 
 ### Added
+
 - Add an action to open all modified files from selected commits in the Git log.
+
+[Unreleased]: https://github.com/naoyukik/intellij-plugin-tab-manager-ex/compare/0.2.3...HEAD
+[0.2.3]: https://github.com/naoyukik/intellij-plugin-tab-manager-ex/compare/0.2.2...0.2.3
+[0.2.2]: https://github.com/naoyukik/intellij-plugin-tab-manager-ex/compare/0.2.1...0.2.2
+[0.2.1]: https://github.com/naoyukik/intellij-plugin-tab-manager-ex/compare/0.2.0...0.2.1
+[0.2.0]: https://github.com/naoyukik/intellij-plugin-tab-manager-ex/compare/0.1.0...0.2.0
+[0.1.0]: https://github.com/naoyukik/intellij-plugin-tab-manager-ex/commits/0.1.0
